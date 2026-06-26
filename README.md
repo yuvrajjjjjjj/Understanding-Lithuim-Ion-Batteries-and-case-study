@@ -7,6 +7,25 @@
 ## 📌 Overview
 This repository contains a comprehensive set of presentations and analytical reports focused on the fundamental workings of Lithium-ion batteries and a practical feasibility study on electrifying the boat fleet at Assi Ghat, Varanasi. This project was completed as part of the **CHE-291 Chemical Engineering** coursework at **IIT BHU**.
 
+## 📊 Project Flowchart
+
+```mermaid
+graph TD
+    A[Analyze Current Fleet] -->|Assess Diesel/CNG Emissions & Cost| B(Determine Power Requirements)
+    B --> C{Categorize Boat Types}
+    C -->|Standard 10 HP| D[10 kW Motor + 30 kWh Battery]
+    C -->|Mid-Size 20 HP| E[20 kW Motor + 60 kWh Battery]
+    C -->|Large 180 HP| F[150 kW Motor + 400 kWh Battery]
+    D --> G[Cell Level Design: 26800 LiFePO4 Cells]
+    E --> G
+    F --> G
+    G --> H[Financial & Feasibility Analysis]
+    H --> I[Identify Challenges: Upfront Cost & Infrastructure]
+    I --> J([Recommendation: Pilot Program & Govt Subsidies])
+    
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style J fill:#bbf,stroke:#333,stroke-width:2px
+
 ## 👥 Authors
 * **Yash Preetham B M**
 * **Yuvraj Jain**
